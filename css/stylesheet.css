@@ -44,6 +44,9 @@ header{
     background-color: rgb(19, 54, 54);
     position: relative;
     z-index: 1;
+    padding: 2em;
+    filter: drop-shadow( 0px 0px 10px #00000070 );
+    z-index: 50;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -55,6 +58,17 @@ header{
 .info_img{
     grid-area: info_img;
     background-color: rgb(0, 189, 189);
+    overflow: hidden;
+    
+}
+
+#artist{
+    position: relative;
+    justify-self: center;
+    margin: auto;
+    left: -70%;
+    height: 100%;
+    max-width: none;
 }
 
 .info_text{
@@ -65,31 +79,64 @@ header{
 .artboard{
     grid-area: artboard;
     background-color: rgb(0, 255, 128);
-    min-height: 200px;
+    min-height: 300px;
+    padding: 5px;
+    overflow: hidden;
+    filter: drop-shadow( 0px -10px 30px #000000 );
+    z-index: 50;
 
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr; 
-    grid-template-areas: 
+    grid-template-columns: 5fr 3fr;
+    grid-template-rows: 1fr 2fr 2fr; 
+    grid-template-areas:
+    "img_border img_border" 
     "img_1 img_2"
-    "img_3 img_4"
+    "img_3 img_2"
      ;
 }
 
-.img_1{
+#img_1{
     grid-area: img_1;
+    background-image: url("../img/white_dragon.jpg");
+    background-size: cover;
+    margin: 5px;
+    height: auto;
+    width: auto;
 }
 
-.img_2{
+#img_2{
     grid-area: img_2;
+    background-image: url("../img/wildling.jpg");
+    background-size: cover;
+    background-position: center; 
+    margin: 5px;
+    height: auto;
+    width: auto;
 }
 
-.img_3{
+#img_3{
     grid-area: img_3;
+    background-image: url("../img/white_dragon_1.jpg");
+    background-size: cover;
+    margin: 5px;
+    height: auto;
+    width: auto;
 }
 
-.img_4{
-    grid-area: img_4;
+#img_4{
+    grid-area: img_border;
+    margin: 5px;
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.img_p{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    color: white;
 }
 
 footer{
@@ -118,7 +165,6 @@ p{
 }
 
 img{
-    
     max-width: 100%
 }
 
