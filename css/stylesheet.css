@@ -45,7 +45,7 @@ body{
     .drop{
         display: none;
         position: fixed;
-        top: 59px;
+        top: 55px;
         background:  rgb(19, 54, 54);
         width: 100%;
         height: auto;
@@ -83,172 +83,237 @@ body{
       
     }
 
-
-    /* CONTENT */
-    .parallax {
-        min-height: 300px;
-        background: transparent;
-        
-    }
-    
-    .container{
-        margin: 0 auto;
-        background: blanchedalmond;
-        font-size: 14px;
-    }
-
-
-    /* ----------INDEX---------- */
-    .info{
-        height: 300px;
-        background-color: rgb(19, 54, 54);
-        position: relative;
-        z-index: 1;
-        padding: 2em;
-        filter: drop-shadow( 0px 0px 10px #00000070 );
-        z-index: 50;
-    
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr; 
-        grid-template-areas: 
-        "info_img info_text" ;
-    }
-    
-    .info_img{
-        grid-area: info_img;
-        background-color: rgb(0, 189, 189);
-        overflow: hidden;
-        
-    }
-    
-    #artist{
-        position: relative;
-        justify-self: center;
-        margin: auto;
-        left: -70%;
-        height: 100%;
-        max-width: none;
-    }
-    
-    .info_text{
-        grid-area: info_text;
-        background-color: rgb(0, 255, 255)
-    }
-    
-    .artboard{
-        grid-area: artboard;
-        background-color: rgb(19, 54, 54);
-        min-height: 300px;
-        padding: 5px;
-        overflow: hidden;
-        filter: drop-shadow( 0px -10px 30px #000000 );
-        z-index: 50;
-    
-        display: grid;
-        grid-template-columns: 5fr 3fr;
-        grid-template-rows: 40px 1fr 1fr; 
-        grid-template-areas:
-        "img_border img_border" 
-        "img_1 img_2"
-        "img_3 img_2"
-        ;
-    }
-    
-    #img_border{
-        grid-area: img_border;
-        margin: 5px;
-        height: auto;
-        width: auto;
-    }
-    
-    #img_1{
-        grid-area: img_1;
-        background-image: url("../img/white_dragon.jpg");
-        background-size: cover;
-        margin: 5px;
-        height: auto;
-        width: auto;
-    }
-    
-    #img_2{
-        grid-area: img_2;
-        background-image: url("../img/wildling.jpg");
-        background-size: cover;
-        background-position: center; 
-        margin: 5px;
-        height: auto;
-        width: auto;
-        padding: 5px;
-    }
-    
-    #img_3{
-        grid-area: img_3;
-        background-image: url("../img/white_dragon_1.jpg");
-        background-size: cover;
-        margin: 5px;
-        height: auto;
-        width: auto;
-    }
-    
-    
-    .img_p{  
-        text-align: center;
-        display: inline-block;
-        height: 100%;
-        width: 100%;
-    }
-
-
-        /* ----------ART---------- */
-
-    .my_art{
-        background-color: indigo;
-        height: 500px;
-    }
-
 }
-        /* ----------GENERAL---------- */
-    h1{
-        position: relative;
-        top: 50%;
-        font-size: 20px;
-        transform: translateY(-100%);
-        color: white; 
-        font-family: Arial, Helvetica, sans-serif;  
-        filter: drop-shadow( 0px 0px 20px #000000 ); 
-    }
-    
-    footer{
-        grid-area: footer;
-        background-color: rgb(99, 185, 0)
-    }
-    
-    .contact{
-        grid-area: contact;
-        background-color: rgb(0, 185, 93)
-    }
-    
-    .social_media{
-        grid-area: social_media;
-        background-color: rgb(0, 80, 40)
-    }
-    
-    .contact_numbers{
-        grid-area: contact_numbers;
-        background-color: rgb(0, 32, 16)
-    }
-    
-    p{
-        color: rgb(255, 255, 255);
-       
-    }
-    
-    img{
-        max-width: 100%
-    }
 
-    a{
-        text-decoration: none;
-        color: white;
-    }
+/* CONTENT */
+.parallax {
+    min-height: 300px;
+    background: transparent;
+    
+}
+
+.container{
+    margin: 0 auto;
+    background: blanchedalmond;
+    font-size: 14px;
+}
+
+
+/* ----------INDEX---------- */
+.info{
+    height: 300px;
+    background-color: rgb(19, 54, 54);
+    position: relative;
+    z-index: 1;
+    padding: 2em;
+    filter: drop-shadow( 0px 0px 10px #00000070 );
+    z-index: 50;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr; 
+    grid-template-areas: 
+    "info_img info_text" ;
+}
+
+.info_img{
+    grid-area: info_img;
+    background-color: rgb(0, 189, 189);
+    overflow: hidden;
+    
+}
+
+#artist{
+    position: relative;
+    justify-self: center;
+    margin: auto;
+    left: -70%;
+    height: 100%;
+    max-width: none;
+}
+
+.info_text{
+    grid-area: info_text;
+    background-color: rgb(0, 255, 255)
+}
+
+.artboard{
+    grid-area: artboard;
+    background-color: rgb(19, 54, 54);
+    min-height: 300px;
+    padding: 5px;
+    overflow: hidden;
+    filter: drop-shadow( 0px -10px 30px #000000 );
+    z-index: 50;
+
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+    grid-template-rows: 40px 1fr 1fr; 
+    grid-template-areas:
+    "img_border img_border" 
+    "img_1 img_2"
+    "img_3 img_2"
+    ;
+}
+
+#img_border{
+    grid-area: img_border;
+    margin: 5px;
+    height: auto;
+    width: auto;
+}
+
+#img_1{
+    grid-area: img_1;
+    background-image: url("../img/white_dragon.jpg");
+    background-size: cover;
+    margin: 5px;
+    height: auto;
+    width: auto;
+}
+
+#img_2{
+    grid-area: img_2;
+    background-image: url("../img/wildling.jpg");
+    background-size: cover;
+    background-position: center; 
+    margin: 5px;
+    height: auto;
+    width: auto;
+    padding: 5px;
+}
+
+#img_3{
+    grid-area: img_3;
+    background-image: url("../img/white_dragon_1.jpg");
+    background-size: cover;
+    margin: 5px;
+    height: auto;
+    width: auto;
+}
+
+
+.img_p{  
+    text-align: center;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+}
+
+/* ----------ART---------- */
+
+.my_art{
+    background-color: indigo;
+    height: auto;
+    padding: 2%;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr; 
+    grid-template-areas:
+    "fineart" 
+    "environments"
+    "characters"
+    ;
+}
+
+.my_art div{
+    height: 200px;
+    background-size: cover;
+    margin: 2%;
+}
+
+.my_art h1{
+    position: relative;
+}
+
+.fineart{
+    grid-area: fineart;
+    background-color: rgb(78, 30, 112);
+    overflow: auto;
+    width: auto;
+}
+
+.fineart div{
+    height: 200px;
+    background-image: url("../img/white_dragon_1.jpg");
+    background-size: cover;
+    margin: 2%;
+}
+
+.environments{
+    grid-area: environments;
+    background-color: rgb(125, 0, 214);
+    overflow: auto;
+    width: auto;
+}
+
+.environments div{
+    height: 200px;
+    background-image: url("../img/white_dragon_1.jpg");
+    background-size: cover;
+    margin: 2%;
+}
+
+.characters{
+    grid-area: characters;
+    background-color: rgb(100, 0, 172);
+    overflow: auto;
+    width: auto;
+}
+
+.characters div{
+
+    height: 200px;
+    background-image: url("../img/white_dragon_1.jpg");
+    background-size: cover;
+    margin: 2%;
+}
+
+
+
+/* ----------GENERAL---------- */
+
+h1{
+    position: relative;
+    top: 50%;
+    font-size: 20px;
+    transform: translateY(-100%);
+    color: white; 
+    font-family: Arial, Helvetica, sans-serif;  
+    filter: drop-shadow( 0px 0px 20px #000000 ); 
+}
+
+footer{
+    grid-area: footer;
+    background-color: rgb(99, 185, 0)
+}
+
+.contact{
+    grid-area: contact;
+    background-color: rgb(0, 185, 93)
+}
+
+.social_media{
+    grid-area: social_media;
+    background-color: rgb(0, 80, 40)
+}
+
+.contact_numbers{
+    grid-area: contact_numbers;
+    background-color: rgb(0, 32, 16)
+}
+
+p{
+    color: rgb(255, 255, 255);
+    
+}
+
+img{
+    max-width: 100%
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
