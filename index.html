@@ -8,91 +8,77 @@
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="./js/parallax.min.js"></script>
+    <script src="./js/script.js"></script>
     
 </head>
 <body>
-    <div class="dropdown">
-        <div class="art">
-            test
+
+    <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <div class="parallax" data-parallax="scroll" data-image-src="./img/art_brush.jpg" data-z-index= "1">
+    </div>
+
+    <div class="info">
+        <div class="info_img">
+            <img id="artist" src="./img/artist.jpg" alt="artist">
         </div>
-        <div class="about">
-            test
-        </div>
-        <div class="commissions">
-            test
-        </div>
-        <div class="contact">
-            test
+        <div class="info_text">
+            <p>info_text</p>
         </div>
     </div>
-    <div class="container">
-        <header>
-            <div class="hamburger">
-                <p>Hamburger</p>
-            </div>
-            <div class="logo">
-                <p>Logo</p>
-            </div>
-        </header>
 
-        <div class="parallax" data-parallax="scroll" data-image-src="./img/art_brush.jpg" data-z-index= "1">
-        </div>
+    <div class="parallax" data-parallax="scroll" data-image-src="img/owl.jpg" data-z-index= "1">
+    </div>
 
-        <div class="info">
-            <div class="info_img">
-                <img id="artist" src="./img/artist.jpg" alt="artist">
-            </div>
-            <div class="info_text">
-                <p>info_text</p>
+    <div class="artboard">
+
+        <div id="img_border">
+            <div class="img_p">
+                <h1>Portfolio</h1>
             </div>
         </div>
 
-        <div class="parallax" data-parallax="scroll" data-image-src="img/owl.jpg" data-z-index= "1">
+        <div class="img" id="img_1">
+            <div class="img_p">
+                <h1>Environments</h1>
+            </div>
         </div>
-
-        <div class="artboard">
-
-            <div id="img_border">
-                <div class="img_p">
-                    <h1>Portfolio</h1>
-                </div>
+        <div class="img" id="img_2">
+            <div class="img_p">
+                <h1>Characters</h1>
             </div>
-
-            <div class="img" id="img_1">
-                <div class="img_p">
-                    <h1>Environments</h1>
-                </div>
+        </div>
+        
+        <div class="img" id="img_3">
+            <div class="img_p">
+                <h1>Fineart</h1>
             </div>
-            <div class="img" id="img_2">
-                <div class="img_p">
-                    <h1>Characters</h1>
-                </div>
+        </div>
+    </div>
+
+    <footer>
+            <div class="contact">
+                <p>
+                    CONTACT
+                </p>
             </div>
             
-            <div class="img" id="img_3">
-                <div class="img_p">
-                    <h1>Fineart</h1>
-                </div>
+            <div class="social_media">
+                <p>social_media</p>
             </div>
-        </div>
-
-        <footer>
-                <div class="contact">
-                    <p>
-                        CONTACT
-                    </p>
-                </div>
-                
-                <div class="social_media">
-                    <p>social_media</p>
-                </div>
-                <div class="contact_numbers">
-                    <p >
-                        Tel: 0760137223 <br>
-                        Email: sagaloepic@gmail.com
-                    </p>
-                </div>
-            </footer>
+            <div class="contact_numbers">
+                <p >
+                    Tel: 0760137223 <br>
+                    Email: sagaloepic@gmail.com
+                </p>
+            </div>
+        </footer>
     </div>
 </body>
 </html>
