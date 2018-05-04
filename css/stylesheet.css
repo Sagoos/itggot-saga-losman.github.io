@@ -33,11 +33,7 @@ body{
         background-position: center;
     }
 
-    .slideshow{
-        padding: 3% 0% 3% 0% ;
-        background-color: rgb(19, 54, 54);
-        height: 500px;
-    }
+    
 }
 
 @media only screen and (min-width: 601px){
@@ -59,11 +55,7 @@ body{
         background-size: cover;
     }
 
-    .slideshow{
-        padding: 3% 0% 3% 0% ;
-        background-color: rgb(19, 54, 54);
-        height: 600px;
-    }
+    
 }
 
 /* ----------All attributes---------- */
@@ -92,8 +84,8 @@ body{
     align-self: center;
     justify-self: center;
     position: relative;
-    
     margin: auto;
+    background-color: indigo;
 }
 
 .drop{
@@ -248,10 +240,14 @@ body{
 }
 
 /* ----------ART---------- */
+.slideshow{
+    padding: 3% 0% 3% 0% ;
+    background-color: rgb(19, 54, 54);
+    height: 100%;
+}
 
 .slideshow h1{
     text-align: center;
-    margin: 3%;
     top: 20px;
 }
 
