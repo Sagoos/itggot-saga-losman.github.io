@@ -11,11 +11,18 @@ body{
 @media only screen and (max-width: 600px){
 
     /* NAV */
-
+    .nav{
+        top: 700px;
+        position: fixed;
+        height: 60px;
+        width: 100%;
+        background:  rgb(9, 29, 29);
+        
+    }
     .topnav{
         position: fixed;
-        height: auto;
-        background:  rgb(19, 54, 54);
+        height: 70px;
+        background:  rgb(9, 29, 29);
         width: 100%;
         border: none;
         z-index: 200;
@@ -35,17 +42,14 @@ body{
 
     .home{
         float: left;
-        align-self: center;
-        justify-self: center;
-        position: relative;
         
         margin: auto;
     }
 
     .drop{
         display: none;
-        position: fixed;
-        top: 55px;
+        position: fixed; 
+        top: 69px;
         background:  rgb(19, 54, 54);
         width: 100%;
         height: auto;
@@ -68,6 +72,7 @@ body{
 
     }
 
+    
     .about{
        grid-area: about; 
        
@@ -83,13 +88,21 @@ body{
       
     }
 
+    .parallax {
+        min-height: 200px;
+        position: relative;
+        background: transparent;
+    
+    }
+    
 }
 
 /* CONTENT */
 .parallax {
-    min-height: 300px;
+    position: relative;
+    min-height: 500px;
     background: transparent;
-    
+
 }
 
 .container{
@@ -201,104 +214,42 @@ body{
 }
 
 /* ----------ART---------- */
-/*
-.my_art{
-    background-color: indigo;
-    height: auto;
-    padding: 2%;
 
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr; 
-    grid-template-areas:
-    "fineart" 
-    "environments"
-    "characters"
-    ;
-}
-
-.my_art div{
-    height: 200px;
-    background-size: cover;
-    margin: 2%;
-}
-
-.my_art h1{
-    position: relative;
-}
-
-.fineart{
-    grid-area: fineart;
-    background-color: rgb(78, 30, 112);
-    overflow: auto;
-    width: auto;
-}
-
-.fineart div{
-    height: 200px;
-    background-image: url("../img/white_dragon_1.jpg");
-    background-size: cover;
-    margin: 2%;
-}
-
-.environments{
-    grid-area: environments;
-    background-color: rgb(125, 0, 214);
-    overflow: auto;
-    width: auto;
-}
-
-.environments div{
-    height: 200px;
-    background-image: url("../img/white_dragon_1.jpg");
-    background-size: cover;
-    margin: 2%;
-}
-
-.characters{
-    grid-area: characters;
-    background-color: rgb(100, 0, 172);
-    overflow: auto;
-    width: auto;
-}
-
-.characters div{
-
-    height: 200px;
-    background-image: url("../img/white_dragon_1.jpg");
-    background-size: cover;
-    margin: 2%;
-}
-
-*/
 
 .slideshow{
     padding: 3%;
-    background-color: aquamarine;
+    background-color: rgb(19, 54, 54);
+    overflow: hidden;
+    height: 500px;
+}
+
+.slideshow h1{
+    text-align: center;
+    top: 5%;
 }
 
 * {box-sizing:border-box}
 
 /* Slideshow container */
 .slideshow-container {
- 
   position: relative;
   margin: auto;
-  width: auto;
-  height: 100%;
+  
 }
 
 .slideshow-container  img{
     display: block; /*for the img inside your div */ 
     margin: 0 auto;
-    width: auto;
-    height: 200px;
-    
+    justify-self: center;
+    max-height: 100%;
+    max-width: auto;
 }
 
 /* Hide the images by default */
 .mySlides {
     display: none;
+    height: 400px;
+
 }
 
 /* Next & previous buttons */
@@ -314,6 +265,7 @@ body{
   font-size: 18px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
+  background-color: rgba(0, 0, 0, 0.37);
 }
 
 /* Position the "next button" to the right */
