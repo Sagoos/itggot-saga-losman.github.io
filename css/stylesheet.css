@@ -4,83 +4,10 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
-/* ----------PHONE---------- */
-
+/* ----------Special attributes for phone and web---------- */
 @media only screen and (max-width: 600px){
 
     /* NAV */
-
-    .topnav{
-        position: fixed;
-        height: auto;
-        background:  rgb(9, 29, 29);
-        width: 100%;
-        border: none;
-        z-index: 200;
-    }
-
-    .topnav a{
-        position: relative;
-        padding: 5%;
-        justify-self: center;
-        
-    }
-
-    .icon{
-        float: right;
-        
-    }
-
-    .home{
-        float: left;
-        align-self: center;
-        justify-self: center;
-        position: relative;
-        
-        margin: auto;
-    }
-
-    .drop{
-        display: none;
-        position: fixed;
-        top: 55px;
-        background:  rgb(19, 54, 54);
-        width: 100%;
-        height: auto;
-        border: none;
-        z-index: 200;
-        
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr  1fr 1fr; 
-        grid-template-areas: 
-        "about" 
-        "portfolio" 
-        "commissions" ;
-    }
-    
-    
-    .drop a{
-        position: relative;
-        padding: 5%;
-
-    }
-
-    .about{
-       grid-area: about; 
-       
-    }
-
-    .portfolio{
-       grid-area: portfolio; 
-      
-    }
-
-    .commissions{
-       grid-area: commissions; 
-      
-    }
 
   
     .parallax {
@@ -92,7 +19,6 @@ body{
         display: block;
         position: relative;
         height: 200px;
-        width: 100%;
         background-image: url("../img/art_brush.jpg");
         background-size: cover;
     }
@@ -107,7 +33,11 @@ body{
         background-position: center;
     }
 
-    
+    .slideshow{
+        padding: 3% 0% 3% 0% ;
+        background-color: rgb(19, 54, 54);
+        height: 500px;
+    }
 }
 
 @media only screen and (min-width: 601px){
@@ -119,9 +49,7 @@ body{
 
     .normallax {
         display: none;
-        min-height: 300px;
-        background-image: url("../img/art_brush.jpg");
-        background-size: cover;
+      
     }
 
     .normallaxed {
@@ -130,7 +58,85 @@ body{
         background-image: url("../img/owl.jpg");
         background-size: cover;
     }
+
+    .slideshow{
+        padding: 3% 0% 3% 0% ;
+        background-color: rgb(19, 54, 54);
+        height: 600px;
+    }
 }
+
+/* ----------All attributes---------- */
+.topnav{
+    position: fixed;
+    height: 70px;
+    background:  rgb(9, 29, 29);
+    width: 100%;
+    border: none;
+    z-index: 200;
+}
+
+.topnav a{
+    position: relative;
+    padding: 25px;
+    justify-self: center;
+}
+
+.icon{
+    float: right;
+    
+}
+
+.home{
+    float: left;
+    align-self: center;
+    justify-self: center;
+    position: relative;
+    
+    margin: auto;
+}
+
+.drop{
+    display: none;
+    position: fixed;
+    top: 70px;
+    background:  rgb(19, 54, 54);
+    width: 100%;
+    height: auto;
+    border: none;
+    z-index: 200;
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr  1fr 1fr; 
+    grid-template-areas: 
+    "about" 
+    "portfolio" 
+    "commissions" ;
+}
+
+
+.drop a{
+    position: relative;
+    padding: 5%;
+
+}
+
+.about{
+    grid-area: about; 
+    
+}
+
+.portfolio{
+    grid-area: portfolio; 
+    
+}
+
+.commissions{
+    grid-area: commissions; 
+    
+}
+
 /* CONTENT */
 
 
@@ -139,7 +145,6 @@ body{
     background: blanchedalmond;
     font-size: 14px;
 }
-
 
 /* ----------INDEX---------- */
 .info{
@@ -243,87 +248,21 @@ body{
 }
 
 /* ----------ART---------- */
-/*
-.my_art{
-    background-color: indigo;
-    height: auto;
-    padding: 2%;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr; 
-    grid-template-areas:
-    "fineart" 
-    "environments"
-    "characters"
-    ;
-}
-.my_art div{
-    height: 200px;
-    background-size: cover;
-    margin: 2%;
-}
-.my_art h1{
-    position: relative;
-}
-.fineart{
-    grid-area: fineart;
-    background-color: rgb(78, 30, 112);
-    overflow: auto;
-    width: auto;
-}
-.fineart div{
-    height: 200px;
-    background-image: url("../img/white_dragon_1.jpg");
-    background-size: cover;
-    margin: 2%;
-}
-.environments{
-    grid-area: environments;
-    background-color: rgb(125, 0, 214);
-    overflow: auto;
-    width: auto;
-}
-.environments div{
-    height: 200px;
-    background-image: url("../img/white_dragon_1.jpg");
-    background-size: cover;
-    margin: 2%;
-}
-.characters{
-    grid-area: characters;
-    background-color: rgb(100, 0, 172);
-    overflow: auto;
-    width: auto;
-}
-.characters div{
-    height: 200px;
-    background-image: url("../img/white_dragon_1.jpg");
-    background-size: cover;
-    margin: 2%;
-}
-*/
-
-
-
-
-.slideshow{
-    padding: 3%;
-    background-color: rgb(19, 54, 54);
-}
 
 .slideshow h1{
     text-align: center;
+    margin: 3%;
+    top: 20px;
 }
 
 * {box-sizing:border-box}
 
 /* Slideshow container */
 .slideshow-container {
- 
-  position: relative;
-  margin: auto;
-  width: auto;
-  height: 400px;
+    position: relative;
+    margin-top: 3%;
+    width: auto;
+    height: auto;
 }
 
 .slideshow-container  img{
@@ -338,7 +277,6 @@ body{
 /* Hide the images by default */
 .mySlides {
     display: none;
-    max-height: auto;
     max-width: 100%;
 }
 
