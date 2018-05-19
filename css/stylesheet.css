@@ -2,6 +2,7 @@ body{
     margin: 0%;
     overflow-x: hidden;
     font-family: Arial, Helvetica, sans-serif;
+    background-color:  rgb(9, 29, 29);
 }
 
 /* ----------Special attributes for phone and web---------- */
@@ -22,6 +23,7 @@ body{
         background-image: url("../img/art_brush.jpg");
         background-size: cover;
     }
+    
 
     .normallaxed {
         display: block;
@@ -31,6 +33,18 @@ body{
         background-image: url("../img/owl.jpg");
         background-size: cover;
         background-position: center;
+    }
+
+    .normallaxed_leon {
+        display: block;
+        position: relative;
+        height: 150px;
+        width: 100%;
+        overflow: hidden;
+        background-image: url("../img/leon.jpg");
+        background-size: cover;
+        background-position: center;
+        background-color: rgb(9, 29, 29);
     }
 
     .info{
@@ -49,6 +63,38 @@ body{
         "info_img info_text" ;
     }
     
+    input[type=text], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    
+    }
+    
+    input[type=submit] {
+        width: 100%;
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .form form div{
+        position: relative;
+        right: 0%;
+    }
+    .form form label{
+        position: relative;
+        right: 0%;
+    
+    }
+    
 }
 
 @media only screen and (min-width: 601px){
@@ -56,13 +102,20 @@ body{
     min-height: 500px;
     background: transparent;
     display: block;
-}
+    }
 
     .normallax {
         display: none;
     }
 
     .normallaxed {
+        display: none;
+        min-height: 300px;
+        background-image: url("../img/owl.jpg");
+        background-size: cover;
+    }
+
+    .normallaxed_leon {
         display: none;
         min-height: 300px;
         background-image: url("../img/owl.jpg");
@@ -84,9 +137,44 @@ body{
         grid-template-areas: 
         "info_img info_text" ;
     }
+
+    input[type=text], select {
+        width: 50%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    
+    }
+    
+    input[type=submit] {
+        width: 50%;
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .form form div{
+        position: relative;
+        right: -25%;
+    }
+    .form form label{
+        position: relative;
+        right: -25%;
+    
+    }
+    
 }
 
 /* ----------All attributes---------- */
+
+/* ----------TOPNAV---------- */
 .topnav{
     position: fixed;
     height: 70px;
@@ -113,18 +201,19 @@ body{
     justify-self: center;
     position: relative;
     margin: auto;
-    background-color: indigo;
+    background-color: rgb(61, 0, 130);
 }
 
 .drop{
     display: none;
     position: fixed;
     top: 70px;
-    background:  rgb(19, 54, 54);
+    background:  rgb(17, 49, 49);
+    filter: drop-shadow( 0px -10px 30px #000000 );
     width: 100%;
     height: auto;
     border: none;
-    z-index: 200;
+    z-index: 100;
     
     display: grid;
     grid-template-columns: 1fr;
@@ -147,6 +236,10 @@ body{
     
 }
 
+.drop a:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
 .portfolio{
     grid-area: portfolio; 
     
@@ -157,14 +250,6 @@ body{
     
 }
 
-/* CONTENT */
-
-
-.container{
-    margin: 0 auto;
-    background: blanchedalmond;
-    font-size: 14px;
-}
 
 /* ----------INDEX---------- */
 
@@ -251,6 +336,22 @@ body{
     width: 100%;
 }
 
+.img_p a, h1{
+    filter: drop-shadow( 0px 10px 30px #000000 ); 
+    top: 20px;
+    position: relative;
+    top: 40%;
+    font-size: 20px;
+   
+    color: rgb(255, 255, 255); 
+    font-size: 2em;
+}
+
+.img_p h1{
+    color: white;
+    transform: translateY(-100%);
+}
+
 /* ----------ART---------- */
 .slideshow{
     padding: 3% 0% 3% 0% ;
@@ -259,8 +360,13 @@ body{
 }
 
 .slideshow h1{
-    text-align: center;
+    filter: drop-shadow( 0px 0px 20px #000000 ); 
     top: 20px;
+    position: relative;
+    top: 50%;
+    font-size: 20px;
+    transform: translateY(-100%);
+    color: rgb(255, 255, 255); 
 }
 
 * {box-sizing:border-box}
@@ -377,18 +483,52 @@ body{
   to {opacity: 1}
 }
 
+/* ----------COMMISSIONS---------- */
 
-/* ----------GENERAL---------- */
-
-h1{
-    position: relative;
-    top: 50%;
-    font-size: 20px;
-    transform: translateY(-100%);
-    color: white; 
-    font-family: Arial, Helvetica, sans-serif;  
-    filter: drop-shadow( 0px 0px 20px #000000 ); 
+.commission_txt{
+    padding: 5%;
+    background-color: rgb(19, 54, 54);
+    filter: drop-shadow( 0px 10px 20px #000000 );
+    z-index: 500;
 }
+.commission_inquiry{
+    
+    background-color: yellowgreen;
+    filter: drop-shadow( 0px 10px 20px #000000 );
+    z-index: 500;
+}
+
+.form{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    align-content: center;
+}
+
+form{
+    align-self: center;
+}
+
+/* ----------ABOUT---------- */
+
+.about_container{
+    padding: 5%;
+    background-color: rgb(19, 54, 54);
+    align-content: center;                                                                                                                                                                                                                               
+}
+
+.about_container div{
+    display: flex;
+    background-image: url("../img/artist.jpg");
+    background-size: cover;
+    height: 100px;
+    width: 250px;
+    position: relative;
+    align-content: center;
+}
+
+
+/* ----------FOOTER---------- */
 
 footer{
     grid-area: footer;
@@ -409,6 +549,16 @@ footer{
     grid-area: contact_numbers;
     background-color: rgb(0, 32, 16)
 }
+
+
+/* ----------GENERAL---------- */
+
+h1{
+    color: rgb(0, 0, 0); 
+    font-family: Arial, Helvetica, sans-serif;  
+    text-align: center;
+}
+
 
 p{
     color: rgb(255, 255, 255);
