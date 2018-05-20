@@ -195,7 +195,7 @@ body{
 .topnav a{
     position: relative;
     padding: 25px;
-    justify-self: center;
+    
 }
 
 .icon{
@@ -206,7 +206,7 @@ body{
 .home{
     float: left;
     align-self: center;
-    justify-self: center;
+    
     position: relative;
     margin: auto;
     background-color: rgb(61, 0, 130);
@@ -273,7 +273,7 @@ body{
 
 #artist{
     position: relative;
-    justify-self: center;
+ 
     margin: auto;
     align-self: center;
     height: 100%;
@@ -287,7 +287,7 @@ body{
     position: relative;
     z-index: 1;
     padding: 2em;
-    filter: drop-shadow( 0px 0px 10px #00000070 );
+    filter: drop-shadow( 0px 0px 10px #000000 );
     z-index: 50;
 }
 
@@ -367,7 +367,7 @@ body{
 
 
 .img a:hover{
-   background-color: #00000030;
+   background-color: rgba(0, 0, 0, 0.3);
 }
 
 .img a h2{
@@ -417,7 +417,7 @@ body{
     margin: 0 auto;
 
     max-width: 100%;
-    justify-self: center;
+  
     
 }
 
@@ -476,7 +476,7 @@ body{
 /* The dots/bullets/indicators */
 .dot_div{
 
-    background-color: #00000000;
+    background-color: black;
     position: relative;
     text-align: center;
     position: relative;
