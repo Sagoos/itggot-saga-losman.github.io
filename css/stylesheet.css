@@ -2,13 +2,13 @@ body{
     margin: 0%;
     overflow-x: hidden;
     font-family: Arial, Helvetica, sans-serif;
-    background-color:  rgb(9, 29, 29);
 }
 
 /* ----------Special attributes for phone and web---------- */
 @media only screen and (max-width: 600px){
 
-    /* PARALLAXES */
+    /* NAV */
+
   
     .parallax {
         display: none;
@@ -22,7 +22,6 @@ body{
         background-image: url("../img/art_brush.jpg");
         background-size: cover;
     }
-    
 
     .normallaxed {
         display: block;
@@ -34,75 +33,20 @@ body{
         background-position: center;
     }
 
-    .normallaxed_leon {
-        display: block;
-        position: relative;
-        height: 150px;
-        width: 100%;
-        overflow: hidden;
-        background-image: url("../img/leon.jpg");
-        background-size: cover;
-        background-position: center;
-        background-color: rgb(9, 29, 29);
-    }
-
-    .normallaxed_howl {
-        display: block;
-        position: relative;
-        height: 150px;
-        width: 100%;
-        overflow: hidden;
-        background-image: url("../img/castle.jpg");
-        background-size: cover;
-        background-position: center;
-        background-color: rgb(9, 29, 29);
-    }
-
-    /* ELSE */
     .info{
+        height: 300px;
+        background-color: rgb(19, 54, 54);
+        position: relative;
+        z-index: 1;
+        padding: 2em;
+        filter: drop-shadow( 0px 0px 10px #00000070 );
+        z-index: 50;
+    
         display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 4fr; 
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr; 
         grid-template-areas: 
-        "info_img" 
-        "info_text";  
-    }
-    
-
-    
-    input[type=text]{
-        width: 100%;
-        padding: 12px 20px;
-        margin: 8px 0;
-        display: inline-block;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-    }
-    
-    input[type=submit] {
-        width: 100%;
-        background-color: #4CAF50;
-        color: white;
-        padding: 14px 20px;
-        margin: 8px 0;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-    }
-
-    .form form div{
-        position: relative;
-        right: 0%;
-    }
-    .form form label{
-        position: relative;
-        right: 0%;
-    
-    }
-
-    .slideshow-container  img{
-        max-height: 500px;
+        "info_img info_text" ;
     }
     
 }
@@ -112,7 +56,7 @@ body{
     min-height: 500px;
     background: transparent;
     display: block;
-    }
+}
 
     .normallax {
         display: none;
@@ -125,64 +69,24 @@ body{
         background-size: cover;
     }
 
-    .normallaxed_leon {
-        display: none;
-        min-height: 300px;
-        background-image: url("../img/owl.jpg");
-        background-size: cover;
-    }
-
     .info{
+        height: 600px;
+        background-color: rgb(19, 54, 54);
+        position: relative;
+        z-index: 1;
+        padding: 2em;
+        filter: drop-shadow( 0px 0px 10px #00000070 );
+        z-index: 50;
+    
         display: grid;
         grid-template-columns: 1fr 2fr;
         grid-template-rows: 1fr; 
         grid-template-areas: 
-        "info_img info_text" ;  
+        "info_img info_text" ;
     }
-    
-    
-
-    input[type=text]{
-        width: 50%;
-        padding: 12px 20px;
-        margin: 8px 0;
-        display: inline-block;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-    }
-    
-    input[type=submit] {
-        width: 50%;
-        background-color: #4CAF50;
-        color: white;
-        padding: 14px 20px;
-        margin: 8px 0;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-    }
-
-    .form form div{
-        position: relative;
-        right: -25%;
-    }
-    .form form label{
-        position: relative;
-        right: -25%;
-    
-    }
-
-    .slideshow-container  img{
-        max-height: 800px;
-    }
-    
-    
 }
 
 /* ----------All attributes---------- */
-
-/* ----------TOPNAV---------- */
 .topnav{
     position: fixed;
     height: 70px;
@@ -195,7 +99,7 @@ body{
 .topnav a{
     position: relative;
     padding: 25px;
-    
+    justify-self: center;
 }
 
 .icon{
@@ -206,22 +110,21 @@ body{
 .home{
     float: left;
     align-self: center;
-    
+    justify-self: center;
     position: relative;
     margin: auto;
-    background-color: rgb(61, 0, 130);
+    background-color: indigo;
 }
 
 .drop{
     display: none;
     position: fixed;
     top: 70px;
-    background:  rgb(17, 49, 49);
-    filter: drop-shadow( 0px -10px 30px #000000 );
+    background:  rgb(19, 54, 54);
     width: 100%;
     height: auto;
     border: none;
-    z-index: 100;
+    z-index: 200;
     
     display: grid;
     grid-template-columns: 1fr;
@@ -244,10 +147,6 @@ body{
     
 }
 
-.drop a:hover{
-    background-color: rgba(0, 0, 0, 0.2);
-}
-
 .portfolio{
     grid-area: portfolio; 
     
@@ -258,6 +157,14 @@ body{
     
 }
 
+/* CONTENT */
+
+
+.container{
+    margin: 0 auto;
+    background: blanchedalmond;
+    font-size: 14px;
+}
 
 /* ----------INDEX---------- */
 
@@ -265,36 +172,20 @@ body{
     grid-area: info_img;
     background-color: rgb(0, 189, 189);
     overflow: hidden;
-    max-height: 100%;
-    background-image: url("../img/artist.jpg");
-    background-size: cover;
-    background-position: center;
 }
 
 #artist{
     position: relative;
- 
-    margin: auto;
+    justify-self: center;
     align-self: center;
+    margin: auto;
     height: 100%;
     max-width: none;
 }
 
-
-.info{
-    
-    background-color: rgb(19, 54, 54);
-    position: relative;
-    z-index: 1;
-    padding: 2em;
-    filter: drop-shadow( 0px 0px 10px #000000 );
-    z-index: 50;
-}
-
 .info_text{
     grid-area: info_text;
-
-    padding: 2%;
+    background-color: rgb(0, 255, 255)
 }
 
 .artboard{
@@ -303,7 +194,7 @@ body{
     min-height: 300px;
     padding: 5px;
     overflow: hidden;
-    filter: drop-shadow( 0px 0px 30px #000000 );
+    filter: drop-shadow( 0px -10px 30px #000000 );
     z-index: 50;
 
     display: grid;
@@ -340,7 +231,7 @@ body{
     margin: 5px;
     height: auto;
     width: auto;
-
+    padding: 5px;
 }
 
 #img_3{
@@ -352,37 +243,12 @@ body{
     width: auto;
 }
 
-.img_p{
-    position: relative;
-    top: 20%;
-}
 
-.img a {  
+.img_p{  
     text-align: center;
     display: inline-block;
     height: 100%;
     width: 100%;
-    filter: drop-shadow( 0px 10px 30px #000000 ); 
-}
-
-
-.img a:hover{
-   background-color: rgba(0, 0, 0, 0.3);
-}
-
-.img a h2{
-    filter: drop-shadow( 0px 10px 30px #000000 ); 
-    position: relative;
-    color: rgb(255, 255, 255); 
-    height: 100%;
-    align-content: center;
-    position: relative;
-    top: 20%;
-}
-
-.img_p h1{
-    color: white;
-    transform: translateY(-100%);
 }
 
 /* ----------ART---------- */
@@ -393,13 +259,8 @@ body{
 }
 
 .slideshow h1{
-    filter: drop-shadow( 0px 0px 20px #000000 ); 
+    text-align: center;
     top: 20px;
-    position: relative;
-    top: 50%;
-    font-size: 20px;
-    transform: translateY(-100%);
-    color: rgb(255, 255, 255); 
 }
 
 * {box-sizing:border-box}
@@ -407,7 +268,7 @@ body{
 /* Slideshow container */
 .slideshow-container {
     position: relative;
-    margin-top: 0%;
+    margin-top: 3%;
     width: auto;
     height: auto;
 }
@@ -415,9 +276,9 @@ body{
 .slideshow-container  img{
     display: block; /*for the img inside your div */ 
     margin: 0 auto;
-
+    max-height: 400px;
     max-width: 100%;
-  
+    justify-self: center;
     
 }
 
@@ -476,7 +337,7 @@ body{
 /* The dots/bullets/indicators */
 .dot_div{
 
-    background-color: black;
+    background-color: #00000000;
     position: relative;
     text-align: center;
     position: relative;
@@ -516,115 +377,37 @@ body{
   to {opacity: 1}
 }
 
-/* ----------COMMISSIONS---------- */
-
-.commission_txt{
-    padding: 5%;
-    background-color: rgb(19, 54, 54);
-    filter: drop-shadow( 0px 10px 20px #000000 );
-    z-index: 500;
-}
-
-.commission_txt h1{
-    color: white;
-}
-.commission_inquiry{
-    
-    background-color: yellowgreen;
-    filter: drop-shadow( 0px 10px 20px #000000 );
-    z-index: 500;
-    padding-bottom: 2%;
-    background-color: #f2f2f2;
-
-}
-
-.commission_inquiry h1{
-    color: rgb(0, 0, 0);
-}
-
-.form{
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-    align-content: center;
-}
-
-form{
-    align-self: center;
-}
-
-/* ----------ABOUT---------- */
-
-.about_container{
-
-    background-color: rgb(19, 54, 54);
-    align-content: center;  
-    display: grid;
-    padding: 5%;
-
-    grid-template-columns: 1fr 5fr 1fr;
-    grid-template-rows: 300px 3fr; 
-    grid-template-areas: 
-    ". img ."
-    "txt txt txt"
-
-    ;
-}
-
-.img_artist{
-    grid-area: img;
-    display: flex;
-    background-image: url("../img/artist.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-    padding: 2%;
-}
-
-.txt_artist{
-    grid-area: txt;
-    position: relative;
-    height: 100%;
-    padding: 2%;
-}
-
-
-
-
-/* ----------FOOTER---------- */
-
-footer{
-    grid-area: footer;
-    padding: 3%;
-}
-
-.contact{
-    grid-area: contact;
- 
-}
-
-.social_media{
-    grid-area: social_media;
- 
-}
-
-.contact_numbers{
-    grid-area: contact_numbers;
-
-}
-
 
 /* ----------GENERAL---------- */
 
 h1{
+    position: relative;
+    top: 50%;
+    font-size: 20px;
+    transform: translateY(-100%);
+    color: white; 
     font-family: Arial, Helvetica, sans-serif;  
-    text-align: center;
-    color: rgb(255, 255, 255);
+    filter: drop-shadow( 0px 0px 20px #000000 ); 
 }
 
-h2{
-    color: rgb(255, 255, 255);
-    font-size: 2em;
+footer{
+    grid-area: footer;
+    background-color: rgb(99, 185, 0)
+}
+
+.contact{
+    grid-area: contact;
+    background-color: rgb(0, 185, 93)
+}
+
+.social_media{
+    grid-area: social_media;
+    background-color: rgb(0, 80, 40)
+}
+
+.contact_numbers{
+    grid-area: contact_numbers;
+    background-color: rgb(0, 32, 16)
 }
 
 p{
@@ -639,8 +422,4 @@ img{
 a{
     text-decoration: none;
     color: white;
-}
-
-svg{
-    height: 2em;
 }
